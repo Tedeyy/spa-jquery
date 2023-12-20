@@ -25,7 +25,7 @@
 @keyframes fade-left {
     0% {
         opacity: 0;
-        transform: translateX(-30px);
+        transform: translateX(30px);
     }
 
     100% {
@@ -144,6 +144,7 @@ body {
 
 .abt {
     padding: 10%;
+    animation: fade-left 1s backwards;
 
     .t {
         text-indent: -20px;
