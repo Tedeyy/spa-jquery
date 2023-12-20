@@ -168,4 +168,84 @@ body {
 
 .proj {
     padding: 10%;
+    animation: fade-up 0.5s 0.4s backwards;
+
+    .t {
+        font-family: Helvetica;
+        font-weight: bolder;
+        font-size: 70px;
+    }
+    .nm {
+        font-family: 'Courier New';
+        font-weight: bolder;
+    }
+    .desc {
+        font-family: 'Courier New';
+        text-indent: 10px;
+        text-align: justify;
+        margin-left: 52%;
+        margin-right: 19%;
+        margin-bottom: 100px;
+    }
+
+    .pos {
+        height: 100px;
+        width: 50%;
+        padding: 10%;
+        float: left;
+        border-radius: 35px;
+        background-image: url(../img/pos.png);
+        background-size: 100% 100%;
+        transition: transform 0.3s ease-out;
+    }
+    
+    .pos:hover {
+        transform: translate(-35px, 30px) scale(1.2);
+    }
+
+    .tms {
+        height: 300px;
+        width: 50%;
+        padding: 10%;
+        float:  left;
+        border-radius: 35px;
+        background-image: url(../img/todo.png);
+        background-size: 100% 100%;
+        transition: transform 0.3s ease-out;
+    }
+
+    .tms:hover {
+        transform: translate(-35px, 30px) scale(1.2);
+    }
+
+    .calc {
+        height: 300px;
+        width: 50%;
+        padding: 10%;
+        float:  left;
+        border-radius: 35px;
+        background-image: url(../img/calc.png);
+        background-size: 100% 100%;
+        transition: transform 0.3s ease-out;
+    }
+
+    .calc:hover {
+        transform: translate(-35px, 30px) scale(1.2);
+    }
+
+    .pp {
+        height: 500px;
+        width: 50%;
+        padding: 10%;
+        float:  left;
+        border-radius: 35px;
+        background-image: url(../img/pp.png);
+        background-size: 100% 100%;
+        transition: transform 0.3s ease-out;
+    }
+
+    .pp:hover {
+        transform: translate(-40px, 40px) scale(1.2);
+    }
+
 }
