@@ -79,7 +79,7 @@ body {
 
 .navbar {
     margin-top: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     height: 40px;
     width: 100%;
     background-color: rgb(0, 0, 0);
@@ -93,6 +93,10 @@ body {
         text-decoration: none;
         position: relative;
         margin-left: 30px;
+    
+    }
+    .btn:focus {
+        background-color: black;
     }
     .btn::before {
         content: '';
@@ -140,6 +144,26 @@ body {
 
 .abt {
     padding: 10%;
+
+    .t {
+        text-indent: -20px;
+        font-family: Helvetica;
+        font-weight: bolder;
+        font-size: 40px;
+    }
+    .desc {
+        width: 55%;
+        text-align: justify;
+        text-indent: 25px;
+        font-family: 'Courier New';
+        font-size: 17px;
+        font-weight: lighter;
+    }
+    .teddy2 {
+        float: right;
+        border-radius: 25px;
+        margin-top: -400px;
+    }
 }
 
 .proj {
