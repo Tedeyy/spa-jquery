@@ -1,6 +1,72 @@
-.cliff-h1{
-    color: #a4adb6;
+@keyframes fade-down {
+    0% {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
+
+@keyframes fade-up {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fade-left {
+    0% {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fade-right {
+    0% {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fade-out {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+
 
 html {
     color: white;
@@ -8,11 +74,68 @@ html {
 }
 
 body {
-    background-color: black;
+    background-color: rgb(0, 0, 0);
+}
+
+.navbar {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    height: 40px;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    animation: fade-down 3s backwards;
+
+    .btn {
+        font-family: Arial;
+        font-weight: bold;
+        font-size: 30px;
+        text-decoration: none;
+        position: relative;
+        margin-left: 30px;
+    }
+    .btn::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        border-radius: 4px;
+        background-color: #ffffff;
+        bottom: 0;
+        left: 0;
+        transform-origin: right;
+        transform: scaleX(0);
+        transition: transform .3s ease-in-out;
+    }
+      
+    .btn:hover::before {
+        transform-origin: left;
+        transform: scaleX(1);
+    }
 }
 
 .hm {
     padding: 10%;
+    animation: fade-right 1s;
+
+    .cliff-h1{
+        font-weight: bolder;
+        font-size: 120px;
+        font-family:'Times New Roman';
+  
+    }
+    .desc {
+        margin-top: -40px;
+        margin-left: 10%;
+        font-family: 'Courier New';
+        font-size: medium;
+        font-weight: lighter;
+    }
+    .teddy1 {
+        float: right;
+        border-radius: 25px;
+        margin-top: -210px;
+    }
 }
 
 .abt {
