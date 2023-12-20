@@ -1,12 +1,24 @@
 .cliff-h1{
-    color: #99ccff;
+    color: #a4adb6;
 }
 
 html {
-    font-family: 'Courier New';
     color: white;
+    margin: 0;
 }
 
 body {
     background-color: black;
+}
+
+.hm {
+    padding: 10%;
+}
+
+.abt {
+    padding: 10%;
+}
+
+.proj {
+    padding: 10%;
 }
